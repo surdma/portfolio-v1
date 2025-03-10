@@ -6,7 +6,7 @@ export default function PageTransistion() {
   return (
     <>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen z-30 bg-pink-600"
+        className="fixed top-0 bottom-0 right-full w-screen z-30 bg-emerald-950"
         initial={{
           x: "100%",
           width: "100%",
@@ -37,7 +37,7 @@ export default function PageTransistion() {
         }}
       />
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen z-10 bg-emerald-950"
+        className="fixed top-0 bottom-0 right-full w-screen z-10 bg-pink-600"
         initial={{
           x: "100%",
           width: "100%",

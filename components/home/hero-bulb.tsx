@@ -11,7 +11,7 @@ export default function HeroBulb() {
     <MotionImage
       src={BulbImage}
       alt="bulb Image"
-      className="hidden md:block h-52 w-52 absolute md:left-[85%] md:translate-y-[80%]"
+      className="hidden md:block h-52 w-52 absolute md:left-[87%] md:translate-y-[80%]"
       whileHover={{
         scaleX: .5,
         scaleY: .5

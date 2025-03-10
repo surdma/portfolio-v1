@@ -5,8 +5,8 @@ export default function HeroButton() {
   return (
     <div className="flex gap-2 items-center self-start">
       <Link
-       
-        href={"/"}
+       target="_blank"
+        href={"https://app.enhancv.com/share/ef6f5cb7/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"}
         className="bg-teal-950 p-2.5 px-6 rounded-lg text-lg text-white font-semibold flex justify-center gap-2.5 items-center border-2 border-solid border-transparent group"
       >
         <p className="text-white">Resume</p>
