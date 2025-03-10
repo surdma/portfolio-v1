@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export default function SkillSection() {
   const myskills = [
-    {
-      name: "Web",
-      x: "42.5vw",
-      y: "0vw",
-    },
+    // {
+    //   name: "Web",
+    //   x: "42.5vw",
+    //   y: "0vw",
+    // },
     {
       name: "Mobile",
       x: "47vw",
@@ -59,14 +59,15 @@ export default function SkillSection() {
 
       <div className="w-full h-screen relative flex items-center justify-center rounded-full circular-light">
        
-      {/* <motion.div
+      <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-8 py-4 shadow-dark cursor-pointer absolute"
           whileHover={{
             scale: 1.05,
           }}
         >
           Web
-        </motion.div> */}
+        </motion.div>
+      
         {myskills.map((skill, index) => (
           <Skill key={index} name={skill.name} x={skill.x} y={skill.y} />
         ))}
