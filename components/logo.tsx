@@ -16,9 +16,9 @@ const Logo = () => {
                 repeat: Infinity,
             }
         }}
-        className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold"
+        className="w-16 h-16 bg-dark flex items-center justify-center rounded-full text-2xl font-bold cursor-pointer"
       >
-        DS
+        <p className="text-2xl font-bold text-light ">DS</p>
       </MotionLink>
     </div>
   );

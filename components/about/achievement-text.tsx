@@ -12,11 +12,11 @@ const AchievementText: React.FC<{ stat: number; comment: string }> = ({
  
   
     return (
-      <div className="flex flex-col items-end justify-center">
-        <span className="inline-block text-7xl font-bold text-nowrap">
+      <div className="flex flex-col items-center md:items-end justify-center">
+        <span className="inline-block text-3xl md:text-7xl font-bold text-nowrap">
           <AnimatedNumber value={stat} />{`${stat < 9 ? "+" : "%"}`}
         </span>
-        <h2 className="text-xl font-medium capitalize text-black/75 text-nowrap">
+        <h2 className="text-xs md:text-xl font-medium capitalize text-black/75 text-nowrap">
           {comment}
         </h2>
       </div>

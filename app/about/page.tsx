@@ -13,7 +13,7 @@ export default function About() {
       <PageTransistion />
       <main className="flex flex-col w-full min-h-screen mb-32" >
         <PageLayout className="pt-16">
-          <AnimatedText text="Passion Fuels Purpose!" className="" />
+          <AnimatedText text="Passion Fuels Purpose!" className="p-6 !text-3xl md:!text-6xl" />
 
           <BioSection />
 

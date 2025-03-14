@@ -1,7 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import { LinkArrow } from "../svgs";
+// import { Modal } from "flowbite";
+
 
 export default function HeroButton() {
+  // const ml = new Modal({
+  //   options: {}
+  // });
+  
   return (
     <div className="flex gap-2 items-center self-start">
       <Link
@@ -12,16 +20,17 @@ export default function HeroButton() {
         <p className="text-white">Resume</p>
         <LinkArrow className="ml-2 text-white" />
       </Link>
-      <Link
-       
-        href={"/"}
+      <button
+       onClick={() => {
+        // ml.toggle();
+       }}
         className="font-bold  flex flex-col justify-center items-center group"
       >
        Contact
         <span className="h-1 inline-block w-0 bg-black group-hover:w-full transition-[width] ease-in-out duration-300">
           &nbsp;
         </span>
-      </Link>
+      </button>
     </div>
   );
 }

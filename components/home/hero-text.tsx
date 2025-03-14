@@ -5,7 +5,7 @@ export default function HeroText() {
     <>
       <AnimatedText
         text="Turning Vision Into Reality With Code And Design."
-        className="!text-6xl !text-left"
+        className="!text-3xl md:!text-6xl !text-left"
       />
 
       <p className="my-4 font-medium text-base">
