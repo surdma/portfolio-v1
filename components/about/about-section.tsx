@@ -2,6 +2,7 @@
 
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import AnimatedText from "../animated-text";
 
 type DetailsProps = {
   position: string;
@@ -23,13 +24,16 @@ const AboutSection: React.FC<{ section: string; details: DetailsProps[] }> = ({
   });
   return (
     <div className="my-32">
-      <h2 className="font-bold text-8xl mt-32  w-full text-center mb-6">
+      {/* <h2 className="font-bold text-8xl mt-32  w-full text-center mb-6">
         {section}
-      </h2>
+      </h2> */}
+       <AnimatedText text={section} className="mt-12 p-6 !text-3xl md:!text-6xl" />
+      
+      
 
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
-          className="absolute bg-dark w-[4px] h-full left-9 top-0 origin-top"
+          className="absolute bg-dark w-[4px] h-full left-0 md:left-9 top-0 origin-top"
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
@@ -49,7 +53,7 @@ const Details: React.FC<{ detail: DetailsProps }> = ({ detail }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-full md:w-[60%] mx-2.5 md:mx-auto flex flex-col items-center justify-between"
     >
       <LiIcon ref={ref} />
       <motion.div
@@ -87,7 +91,7 @@ const LiIcon: React.FC<{ ref: any }> = ({ ref }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-dark">
+    <figure className="absolute -left-9 md:left-0 stroke-dark">
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         {/* Background circle */}
         <circle

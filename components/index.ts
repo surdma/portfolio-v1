@@ -6,3 +6,4 @@ export * from "./footer";
 export * from "./page_layout";
 export * from "./home";
 export * from "./page-transistion";
+export * from "./auth-modal";

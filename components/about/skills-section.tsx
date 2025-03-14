@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import AnimatedText from "../animated-text";
 
 export default function SkillSection() {
   const myskills = [
@@ -55,9 +56,11 @@ export default function SkillSection() {
   ];
   return (
     <>
-      <h2 className="font-bold text-8xl mt-32  w-full text-center">Skills</h2>
+      {/* <h2 className="font-bold text-8xl mt-32  w-full text-center"></h2> */}
+      <AnimatedText text="Skills" className="mt-12 p-6 !text-3xl md:!text-6xl" />
 
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full circular-light">
+
+      <div className="w-full max-h-1/2 md:h-screen relative flex items-center justify-center rounded-full circular-light">
        
       <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-8 py-4 shadow-dark cursor-pointer absolute"
